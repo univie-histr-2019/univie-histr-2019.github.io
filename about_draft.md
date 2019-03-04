@@ -66,19 +66,81 @@ Each class session will consist in large part of practical hands-on exercises le
 
 Some topics are foundational and are taught in the TNT Class
 
-- ` Tu 05.03 [#01]` 	Introduction
-- ` Tu 19.03 [#02]` 	Data organization
-- ` Tu 26.03 [#03]` 	Data Manipulations I
-- ` Tu 02.04 [#04]` 	Data Manipulations II
-- ` Tu 09.04 [#05]` 	Graphing data I
-- ` Tu 30.04 [#06]` 	Graphing data II
-- ` Tu 07.05 [#07]` 	Graphing data III
-- ` Tu 14.05 [#08]` 	Social Network Analysis
-- ` Tu 21.05 [#09]` 	Mapping Data
-- ` Tu 28.05 [#10]` 	Working with texts I
-- ` Tu 04.06 [#11]` 	Working with texts II
-- ` Tu 18.06 [#12]` 	Working with texts III 
-- ` Tu 25.06 [#13]` 	Project presentations
+- ` Tu 05.03 [#01]` Introduction
+- ` Tu 19.03 [#02]` Data organization
+- ` Tu 26.03 [#03]` TEXTS: Simple techniques
+- ` Tu 02.04 [#04]` TEXTS: Moderate techniques
+- ` Tu 09.04 [#05]` TEXTS: Complex techniques 
+- ` Tu 30.04 [#06]` 
+- ` Tu 07.05 [#07]` 
+- ` Tu 14.05 [#08]` 
+- ` Tu 21.05 [#09]` 
+- ` Tu 28.05 [#10]` 
+- ` Tu 04.06 [#11]` 
+- ` Tu 18.06 [#12]` 
+- ` Tu 25.06 [#13]` Project presentations
+
+
+## Detailed Schedule
+
+### ` Tu 05.03 [#01]` Introduction
+
+- Installing `R`: <https://cloud.r-project.org/>
+- Installing `RStudio`: <https://www.rstudio.com/products/rstudio/download/>
+- Basic commands in `R`
+- Writing `R markdown` documents
+
+### ` Tu 12.03 [#02]` NO CLASS
+
+- Homework (for 19.03):
+	- `swirl` tutorials
+		- > reports in `R markdown`
+	- Jockers's book: Part I --- Micro Analysis
+		- > reports in `R markdown`
+
+### ` Tu 19.03 [#02]` Data
+
+- Creating, Collection and Organinzing Data
+	- **READING**: Broman, Karl W., and Kara H. Woo. “Data Organization in Spreadsheets.” *The American Statistician* 72, no. 1 (January 2, 2018): 2–10. <https://doi.org/10.1080/00031305.2017.1375989>.
+
+
+### ` Tu 26.03 [#03]` 
+
+### ` Tu 02.04 [#04]` 
+
+### ` Tu 09.04 [#05]` 
+
+### ` Tu 30.04 [#06]` 
+
+### ` Tu 07.05 [#07]` 
+
+### ` Tu 14.05 [#08]` 
+
+### ` Tu 21.05 [#09]` 
+
+### ` Tu 28.05 [#10]` 
+
+### ` Tu 04.06 [#11]` 
+
+### ` Tu 18.06 [#12]` 
+
+### ` Tu 25.06 [#13]` 
+
+# Topics to cover:
+
+1. R basics:
+	- Basic intro;
+		- Interactive tutorial:
+			- Swirl, <https://swirlstats.com/>
+			- learnr, <https://rstudio.github.io/learnr/examples.html>
+	- Specific tools in R:
+		- RMarkdown <https://bookdown.org/yihui/rmarkdown/>
+		- Shiny
+		- ggplot2 and ggvis
+		- tidyverse
+
+- topic modeling
+- stylometry
 
 ## Datasets
 
