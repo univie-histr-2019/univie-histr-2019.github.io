@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
 
-  <title>Lesson 1</title>
+  <title>R Notebook Test</title>
 
   <meta name="author" content="Students of the Class" />
 
@@ -58,19 +58,19 @@
   
 
   
-  <meta property="og:title" content="Lesson 1" />
+  <meta property="og:title" content="R Notebook Test" />
   
 
    
-  <meta property="og:description" content="## Goals: * Install R and R Studio and start working with them * R * R Studio * Get to know R Notebooks (R markdown) * Start learning R with the `swirl` package * Beginner: *R Programming: The basics of programming in R* * Intermediate: *Getting and Cleaning Data*...">
+  <meta property="og:description" content="# Installation instructions Installation instructions can be found here . What you need to do is to run the following line in `Console` (RStudio, check lower left corner): ``` r install.packages('rmarkdown') ``` Any package can be instaled in this manner. You may have to run, to install `tinytex`: ``` r...">
   
 
 
   <meta property="og:type" content="website" />
 
   
-  <meta property="og:url" content="http://localhost:4000/01/" />
-  <link rel="canonical" href="http://localhost:4000/01/" />
+  <meta property="og:url" content="http://localhost:4000/files/01/rNotebook_Test.Rmd" />
+  <link rel="canonical" href="http://localhost:4000/files/01/rNotebook_Test.Rmd" />
   
 
   
@@ -84,11 +84,11 @@
   <meta name="twitter:creator" content="@" />
 
   
-  <meta name="twitter:title" content="Lesson 1" />
+  <meta name="twitter:title" content="R Notebook Test" />
   
 
   
-  <meta name="twitter:description" content="## Goals: * Install R and R Studio and start working with them * R * R Studio * Get to know R Notebooks (R markdown) * Start learning R with the `swirl` package * Beginner: *R Programming: The basics of programming in R* * Intermediate: *Getting and Cleaning Data*...">
+  <meta name="twitter:description" content="# Installation instructions Installation instructions can be found here . What you need to do is to run the following line in `Console` (RStudio, check lower left corner): ``` r install.packages('rmarkdown') ``` Any package can be instaled in this manner. You may have to run, to install `tinytex`: ``` r...">
   
 
   
@@ -347,7 +347,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-heading">
-          <h1>Lesson 1</h1>
+          <h1>R Notebook Test</h1>
 		  
 		  
 		  
@@ -365,79 +365,74 @@
 <div class="container" role="main">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <h2 id="goals">Goals:</h2>
+      # Installation instructions
 
-<ul>
-  <li>Install R and R Studio and start working with them
-    <ul>
-      <li>R <a href="https://www.r-project.org/">https://www.r-project.org/</a></li>
-      <li>R Studio <a href="https://www.rstudio.com/">https://www.rstudio.com/</a></li>
-    </ul>
-  </li>
-  <li>Get to know R Notebooks (R markdown)</li>
-  <li>Start learning R with the <code class="highlighter-rouge">swirl</code> package
-    <ul>
-      <li>Beginner: <em>R Programming: The basics of programming in R</em></li>
-      <li>Intermediate: <em>Getting and Cleaning Data</em></li>
-    </ul>
-  </li>
-</ul>
+Installation instructions can be found here <https://bookdown.org/yihui/rmarkdown/installation.html>.
 
-<h2 id="software">Software:</h2>
+What you need to do is to run the following line in `Console` (RStudio, check lower left corner):
 
-<ul>
-  <li>R <a href="https://www.r-project.org/">https://www.r-project.org/</a></li>
-  <li>R Studio <a href="https://www.rstudio.com/">https://www.rstudio.com/</a></li>
-</ul>
+``` r
+install.packages('rmarkdown')
+```
 
-<h2 id="class-part-i">Class, Part I</h2>
+Any package can be instaled in this manner.
 
-<ul>
-  <li>R Studio Interface</li>
-  <li>Installing libraries (packages)</li>
-  <li>R Notebook elements: combining prose and code</li>
-  <li>Converting R Notebook into different formats</li>
-</ul>
 
-<p>###</p>
+You may have to run, to install `tinytex`:
 
-<h2 id="class-part-ii">Class, Part II</h2>
+``` r
+tinytex::install_tinytex(force=TRUE)
+```
 
-<ol>
-  <li>Install <code class="highlighter-rouge">swirl</code>:</li>
-</ol>
 
-<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">install.packages</span><span class="p">(</span><span class="s2">"swirl"</span><span class="p">)</span><span class="w">
-</span></code></pre></div></div>
+# Basics
 
-<ol>
-  <li>Run a course by typing the following in your command line (might be better to use your command line, instead of R Studio). Type <code class="highlighter-rouge">r</code> to start R, then:</li>
-</ol>
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-library(swirl)
-install_course("R Programming E")
-swirl()
-</code></pre></div></div>
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
 
-<ol>
-  <li>Complete “R Programming E” course. There should be an option to send an email to the instructor, confirming that you have completed it.</li>
-</ol>
+**NB**: `{r}` tells the system that this code must be executed; `r` simply highlights the code, but does not execute it.
 
-<h2 id="reference-materials">Reference materials:</h2>
+```{r, echo=TRUE, fig.height=4}
+plot(cars)
+```
 
-<ul>
-  <li>Your <code class="highlighter-rouge">R</code> installation may ‘speak’ your main language. It is nice on one hand, but can be quite inconvenient in class, where the main language is English. You may have to do cast some spells to switch <code class="highlighter-rouge">R</code> into English. Possible solutions can be found here: <a href="https://stackoverflow.com/questions/13575180/how-to-change-language-settings-in-r/">https://stackoverflow.com/questions/13575180/how-to-change-language-settings-in-r/</a></li>
-</ul>
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
 
-<h2 id="homework">Homework:</h2>
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
 
-<ul>
-  <li>Complete swirl’s course <em>R Programming: The basics of programming in R</em></li>
-  <li>Write a report (R Notebook), summarizing what you have learned. Use one or two examples from each lesson.</li>
-  <li>Email (or Moodle) your report in HTML and PDF formats.</li>
-</ul>
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
 
+# Let's try something simple but fun
+
+Let's run the following line to install RXKCD.[^1]
+
+[^1]: From here: <https://blog.revolutionanalytics.com/2011/07/a-bit-of-fun-with-r.html>
+
+``` r
+install.packages("RXKCD", repos="http://R-Forge.R-project.org",type="source")
+```
+
+You may see R complaining that certain packages are not available. Can you figure out what to do?
+
+
+Now let's load the libraries:
+
+``` {r}
+library(RXKCD)
+library(RJSONIO)
+library(jpeg)
+```
+
+Now, we can use `RXKCD`:
+
+```{r echo=TRUE}
+searchXKCD("regular expressions")
+```
+
+```{r}
+getXKCD(208)
+```
 
 	    
         <div class="disqus-comments">

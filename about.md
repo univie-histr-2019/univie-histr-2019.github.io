@@ -72,12 +72,12 @@ Some topics are foundational and are taught in the TNT Class
 - ` Tu 02.04 [#04]` 	Data Manipulations II
 - ` Tu 09.04 [#05]` 	Graphing data I
 - ` Tu 30.04 [#06]` 	Graphing data II
-- ` Tu 07.05 [#07]` 	Graphing data III
-- ` Tu 14.05 [#08]` 	Social Network Analysis
-- ` Tu 21.05 [#09]` 	Mapping Data
-- ` Tu 28.05 [#10]` 	Working with texts I
-- ` Tu 04.06 [#11]` 	Working with texts II
-- ` Tu 18.06 [#12]` 	Working with texts III 
+- ` Tu 07.05 [#07]` 	Social Network Analysis I
+- ` Tu 14.05 [#08]` 	Social Network Analysis II
+- ` Tu 21.05 [#09]` 	Mapping Data I
+- ` Tu 28.05 [#10]` 	Mapping Data II
+- ` Tu 04.06 [#11]` 	Working with texts I
+- ` Tu 18.06 [#12]` 	Working with texts II 
 - ` Tu 25.06 [#13]` 	Project presentations
 
 ## Datasets

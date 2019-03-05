@@ -1,0 +1,76 @@
+---
+title: "R Notebook Test"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+---
+
+# Installation instructions
+
+Installation instructions can be found here <https://bookdown.org/yihui/rmarkdown/installation.html>.
+
+What you need to do is to run the following line in `Console` (RStudio, check lower left corner):
+
+``` r
+install.packages('rmarkdown')
+```
+
+Any package can be instaled in this manner.
+
+
+You may have to run, to install `tinytex`:
+
+``` r
+tinytex::install_tinytex(force=TRUE)
+```
+
+
+# Basics
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+**NB**: `{r}` tells the system that this code must be executed; `r` simply highlights the code, but does not execute it.
+
+```{r, echo=TRUE, fig.height=4}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+# Let's try something simple but fun
+
+Let's run the following line to install RXKCD.[^1]
+
+[^1]: From here: <https://blog.revolutionanalytics.com/2011/07/a-bit-of-fun-with-r.html>
+
+``` r
+install.packages("RXKCD", repos="http://R-Forge.R-project.org",type="source")
+```
+
+You may see R complaining that certain packages are not available. Can you figure out what to do?
+
+
+Now let's load the libraries:
+
+``` {r}
+library(RXKCD)
+library(RJSONIO)
+library(jpeg)
+```
+
+Now, we can use `RXKCD`:
+
+```{r echo=TRUE}
+searchXKCD("regular expressions")
+```
+
+```{r}
+getXKCD(208)
+```
