@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: post
 title: Lesson 1
-subtitle: 
+subtitle: General Introduction
+tags: intro
+comments: true
 ---
 
 ## Goals:

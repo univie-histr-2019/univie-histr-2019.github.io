@@ -7,6 +7,17 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Lesson 1</title>
+        <description>
+          General Introduction - 
+          Goals: Install R and R Studio and start working with them R https://www.r-project.org/ R Studio https://www.rstudio.com/ Get to know R Notebooks (R markdown) Start learning R with the swirl package Beginner: R Programming: The basics of programming in R Intermediate: Getting and Cleaning Data Software: R https://www.r-project.org/ R Studio https://www.rstudio.com/...
+        </description>
+        <pubDate>Tue, 05 Feb 2019 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/2019-02-05-general-introduction/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-02-05-general-introduction/</guid>
+      </item>
+    
+      <item>
         <title>Post3 - Test markdown</title>
         <description>
           Each post also has a subtitle - 

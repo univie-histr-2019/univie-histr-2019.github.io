@@ -25,9 +25,9 @@ description: DH Methods — Historical Inquiries with R
 navbar-links:
   Syllabus: "about"
   Lessons:
-    - 01. ...: "01"
-    - 02. ...: "02"
-    - 03. ...: "03"
+    - 01. Intro: "01"
+    - 02. Data Organization: "02"
+    - 03. Data Manipulation: "03"
     - 04. ...: "04"
     - 05. ...: "05"
     - 06. ...: "06"

@@ -151,7 +151,7 @@
 
 
 
-<a href="/01">01. ...</a>
+<a href="/01">01. Intro</a>
 
                 
               
@@ -163,7 +163,7 @@
 
 
 
-<a href="/02">02. ...</a>
+<a href="/02">02. Data Organization</a>
 
                 
               
@@ -175,7 +175,7 @@
 
 
 
-<a href="/03">03. ...</a>
+<a href="/03">03. Data Manipulation</a>
 
                 
               
@@ -402,37 +402,6 @@ Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by press
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
 
 The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
-
-# Let's try something simple but fun
-
-Let's run the following line to install RXKCD.[^1]
-
-[^1]: From here: <https://blog.revolutionanalytics.com/2011/07/a-bit-of-fun-with-r.html>
-
-``` r
-install.packages("RXKCD", repos="http://R-Forge.R-project.org",type="source")
-```
-
-You may see R complaining that certain packages are not available. Can you figure out what to do?
-
-
-Now let's load the libraries:
-
-``` {r}
-library(RXKCD)
-library(RJSONIO)
-library(jpeg)
-```
-
-Now, we can use `RXKCD`:
-
-```{r echo=TRUE}
-searchXKCD("regular expressions")
-```
-
-```{r}
-getXKCD(208)
-```
 
 	    
         <div class="disqus-comments">

@@ -151,7 +151,7 @@
 
 
 
-<a href="/01">01. ...</a>
+<a href="/01">01. Intro</a>
 
                 
               
@@ -163,7 +163,7 @@
 
 
 
-<a href="/02">02. ...</a>
+<a href="/02">02. Data Organization</a>
 
                 
               
@@ -175,7 +175,7 @@
 
 
 
-<a href="/03">03. ...</a>
+<a href="/03">03. Data Manipulation</a>
 
                 
               
@@ -399,7 +399,29 @@
   <li>Converting R Notebook into different formats</li>
 </ul>
 
-<p>###</p>
+<h3 id="installing-rmarkdown">Installing <code class="highlighter-rouge">rmarkdown</code></h3>
+
+<p>Instructions here: <a href="https://bookdown.org/yihui/rmarkdown/installation.html">https://bookdown.org/yihui/rmarkdown/installation.html</a></p>
+
+<h3 id="yaml-header">YAML header</h3>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">---</span><span class="w">
+</span><span class="n">title</span><span class="o">:</span><span class="w"> </span><span class="s2">"R Notebook Test"</span><span class="w">
+</span><span class="n">output</span><span class="o">:</span><span class="w">
+  </span><span class="n">html_document</span><span class="o">:</span><span class="w">
+    </span><span class="n">df_print</span><span class="o">:</span><span class="w"> </span><span class="n">paged</span><span class="w">
+    </span><span class="n">toc</span><span class="o">:</span><span class="w"> </span><span class="n">true</span><span class="w">
+</span><span class="o">---</span><span class="w">
+</span></code></pre></div></div>
+
+<p>You can download the notebook file from <a href="https://univie-histr-2019.github.io/files/01/rNotebook_Test.Rmd.zip">here</a>, but it is better if you try to build your own peice by piece, regenerating the notebook with every new element added.</p>
+
+<p><strong>NB:</strong> More information on R Markdown:</p>
+
+<ul>
+  <li><a href="https://rmarkdown.rstudio.com/lesson-1.html">https://rmarkdown.rstudio.com/lesson-1.html</a></li>
+  <li><a href="https://bookdown.org/yihui/rmarkdown/">https://bookdown.org/yihui/rmarkdown/</a></li>
+</ul>
 
 <h2 id="class-part-ii">Class, Part II</h2>
 
@@ -414,8 +436,7 @@
   <li>Run a course by typing the following in your command line (might be better to use your command line, instead of R Studio). Type <code class="highlighter-rouge">r</code> to start R, then:</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-library(swirl)
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(swirl)
 install_course("R Programming E")
 swirl()
 </code></pre></div></div>
@@ -423,6 +444,8 @@ swirl()
 <ol>
   <li>Complete “R Programming E” course. There should be an option to send an email to the instructor, confirming that you have completed it.</li>
 </ol>
+
+<p><strong>NB:</strong> More information on the <code class="highlighter-rouge">swirl</code> library: <a href="https://github.com/swirldev/swirl_courses">https://github.com/swirldev/swirl_courses</a></p>
 
 <h2 id="reference-materials">Reference materials:</h2>
 
