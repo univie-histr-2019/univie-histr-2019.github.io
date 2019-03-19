@@ -151,7 +151,7 @@
 
 
 
-<a href="/01">01. Intro</a>
+<a href="/01">01. General Introduction</a>
 
                 
               
@@ -163,7 +163,7 @@
 
 
 
-<a href="/02">02. Data Organization</a>
+<a href="/02">02. Basics of R</a>
 
                 
               
@@ -175,7 +175,7 @@
 
 
 
-<a href="/03">03. Data Manipulation</a>
+<a href="/03">03. Manipulating Data</a>
 
                 
               

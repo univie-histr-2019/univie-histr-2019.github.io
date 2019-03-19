@@ -64,7 +64,7 @@ Each class session will consist in large part of practical hands-on exercises le
 
 # Schedule for the R Course
 
-Some topics are foundational and are taught in the TNT Class
+The syllabus is approximate and may be adjusted. The following is more of a roadmap.
 
 - ` Tu 05.03 [#01]` 	Introduction
 - ` Tu 19.03 [#02]` 	Data organization
@@ -79,6 +79,8 @@ Some topics are foundational and are taught in the TNT Class
 - ` Tu 04.06 [#11]` 	Working with texts I
 - ` Tu 18.06 [#12]` 	Working with texts II 
 - ` Tu 25.06 [#13]` 	Project presentations
+
+**NB:** Some topics are foundational and will not be discussed in this class; if you are unfamiliar with those, you are encouraged to attend a relevamt class in the *Tools & Techniques* Course (<https://univie-tnt-2019.github.io/>)
 
 ## Datasets
 
