@@ -7,48 +7,54 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Lesson 3</title>
+        <description>
+          Data (1) - 
+          Follow the link…
+
+
+        </description>
+        <pubDate>Mon, 25 Mar 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2019-03-25-L03-data-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-03-25-L03-data-1/</guid>
+      </item>
+    
+      <item>
+        <title>Lesson 2</title>
+        <description>
+          Basics of R - 
+          Follow the link…
+
+
+        </description>
+        <pubDate>Fri, 08 Mar 2019 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/2019-03-08-L02-basics-of-r/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-03-08-L02-basics-of-r/</guid>
+      </item>
+    
+      <item>
         <title>Lesson 1</title>
         <description>
           General Introduction - 
-          Goals: Install R and R Studio and start working with them R https://www.r-project.org/ R Studio https://www.rstudio.com/ Get to know R Notebooks (R markdown) Start learning R with the swirl package Beginner: R Programming: The basics of programming in R Intermediate: Getting and Cleaning Data Software: R https://www.r-project.org/ R Studio https://www.rstudio.com/...
-        </description>
-        <pubDate>Tue, 05 Feb 2019 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/2019-02-05-general-introduction/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019-02-05-general-introduction/</guid>
-      </item>
-    
-      <item>
-        <title>Post3 - Test markdown</title>
-        <description>
-          Each post also has a subtitle - 
-          Reproduced from: https://deanattali.com/beautiful-jekyll/ You can write regular markdown here and Jekyll will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc. Here is some bold text...
-        </description>
-        <pubDate>Sun, 03 Feb 2019 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/2019-02-03-post3-test-markdown/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019-02-03-post3-test-markdown/</guid>
-      </item>
-    
-      <item>
-        <title>Post 2 - Vienna</title>
-        <description>
-          The City of Music - 
-          Vienna (/viˈɛnə/, German: Wien, [viːn]) is the federal capital and largest city of Austria, and one of the nine states of Austria. Vienna is Austria’s primate city, with a population of about 1.9 million (2.6 million within the metropolitan area, nearly one third of Austria’s population), and its cultural, economic,...
-        </description>
-        <pubDate>Sat, 02 Feb 2019 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/2019-02-02-post2-vienna/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019-02-02-post2-vienna/</guid>
-      </item>
-    
-      <item>
-        <title>Post 1 - Hello world!</title>
-        <description>
-          
-          This is just the very first blog post with only one paragraph of text.
+          Follow the link…
+
 
         </description>
-        <pubDate>Fri, 01 Feb 2019 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/2019-02-01-post1-hello-world/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019-02-01-post1-hello-world/</guid>
+        <pubDate>Mon, 04 Mar 2019 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/2019-03-04-L01-general-introduction/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-03-04-L01-general-introduction/</guid>
+      </item>
+    
+      <item>
+        <title>Syllabus</title>
+        <description>
+          Description of the Course - 
+          Follow the link…
+
+        </description>
+        <pubDate>Sun, 03 Mar 2019 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/2019-03-03-syllabus/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-03-03-syllabus/</guid>
       </item>
     
   </channel>

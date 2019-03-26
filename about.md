@@ -42,7 +42,8 @@ Each class session will consist in large part of practical hands-on exercises le
 * Jockers, Matthew L. *Text Analysis with R for Students of Literature.* New York: Springer, 2014. (*Moodle*)
 * Arnold, Taylor, and Lauren Tilton. *Humanities Data in R.* New York, NY: Springer Science+Business Media, 2015.
 * Healy, Kieran *Data Visualization: A Practical Guide*, <http://socviz.co/>
-* Check <https://bookdown.org/> for more books on R
+* Hadley Wickham & Garrett Grolemund, *R for Data Science*, <https://r4ds.had.co.nz/>
+* Also check <https://bookdown.org/> for more books on R
 
 # Software, Tools, Technologies
 
