@@ -420,9 +420,94 @@
 
 <h2 id="basic-principles-of-organizing-data-tidy-data">Basic principles of organizing data: <em>Tidy Data</em></h2>
 
-<ol>
-  <li>…</li>
-</ol>
+<h3 id="tidy-data">Tidy Data</h3>
+
+<ul>
+  <li>Each variable is in its own column</li>
+  <li>Each observation is in its own row</li>
+  <li>Each value is in its own cell</li>
+</ul>
+
+<h3 id="clean-data">Clean Data</h3>
+
+<ul>
+  <li>Column names and row names are easy to use and informative. In general, it is a good practice to avoid <code class="highlighter-rouge">spaces</code> and special characters.
+    <ul>
+      <li>Good example: <code class="highlighter-rouge">western_cities</code></li>
+      <li>Alternative good example: <code class="highlighter-rouge">WesternCities</code></li>
+      <li>Bad example: <code class="highlighter-rouge">Western Cities (only the largest)</code></li>
+    </ul>
+  </li>
+  <li>Obvious mistakes in the data have been removed
+    <ul>
+      <li>Date format: <code class="highlighter-rouge">YYYY-MM-DD</code> is the most reliable format. Any thoughts why?</li>
+      <li>There should be no empty <code class="highlighter-rouge">cells</code>:
+        <ul>
+          <li>If you have them, it might be that your data is not organized properly.</li>
+          <li>If your data is organized properly, <code class="highlighter-rouge">NA</code> must be used as an explicit indication that data point is not available.</li>
+        </ul>
+      </li>
+      <li>Each cell must contain only one piece of data.</li>
+    </ul>
+  </li>
+  <li>Variable values must be internally consistent
+    <ul>
+      <li>Be consistent in coding your values: <code class="highlighter-rouge">M</code> and <code class="highlighter-rouge">man</code> are different values computationally, but may be the same in the dataset;</li>
+      <li>Keep track of your categories: a document where all codes used in the data set are explained.</li>
+    </ul>
+  </li>
+  <li>Preserve original values
+    <ul>
+      <li>If you are working with a historical dataset, it might be inconsistent.
+        <ul>
+          <li>For example, distances between cities are given in different formats: days of travel, miles, <em>farsaḫ</em>s/parasangs, etc.).</li>
+          <li>Instead of replacing original values, it is better to create an additional column, where this information will be homogenized according to some principle.</li>
+          <li>Keeping original data will allow to honogenize data in multiple ways (example: <em>day of travel</em>).</li>
+        </ul>
+      </li>
+      <li>Clearly differentiate between the <em>original</em> and <em>modified/modelled</em> values.
+        <ul>
+          <li>The use of suffixes can be convenient: <code class="highlighter-rouge">Distance_Orig</code> <em>vs</em> <code class="highlighter-rouge">Distance_Modified</code>.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Most of editing operations should be performed in software other than R; any spreadsheet program will work, unless it cannot export into CSV/TSV format.
+    <ul>
+      <li>Keep in mind that if you prepare your data in Excel-like program, aby manual highlights, bolds, and italics are not <em>data</em> and they will be lost, when you export your data into CSV/TSV format.</li>
+      <li><strong>Note:</strong> It might be useful, however, to use rule-based highlighting in order, for example, to identify bad values that need to be fixed.</li>
+    </ul>
+  </li>
+  <li>Back up your data!
+    <ul>
+      <li>
+        <github.com> is a great place for this, plus it allows to work collaboratively.
+</github.com>
+      </li>
+      <li><code class="highlighter-rouge">Google spreadsheets</code> is a decent alternative, but it lacks version control and detailed tracking of changes.</li>
+    </ul>
+  </li>
+</ul>
+
+<!--
+EXTRA NOTES
+
+https://lsru.github.io/tv_course/lecture05_tidyr.html#1
+
+https://arxiv.org/abs/1809.02264
+
+https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html
+http://vita.had.co.nz/papers/tidy-data.html // https://vita.had.co.nz/papers/tidy-data.pdf
+
+Jeff Leek in his book The Elements of Data Analytic Style (Jeff Leek, The Elements of Data Analytic Style, Leanpub, 2015-03-02) summarizes the characteristics of tidy data as the points:[3]
+
+Each variable you measure should be in one column.
+Each different observation of that variable should be in a different row.
+There should be one table for each "kind" of variable.
+If you have multiple tables, they should include a column in the table that allows them to be linked.
+
+
+-->
 
 <h1 id="in-class-ii-practical">In Class II: <em>Practical</em></h1>
 
@@ -430,7 +515,7 @@
 
 ## Bulliet Dataset
 
-|![Sample_Page_With_Tabular_Data](/img/03/Sample_Page_With_Tabular_Data.png)|
+|![Sample_Page_With_Tabular_Data](./img/03/Sample_Page_With_Tabular_Data.png)|
 |:-:|
 |The data set shows chrono-geographical distribution of Islamic scholars, according to one of the medieval biographical sources. Source: Bulliet, Richard W. 2009. *Cotton, Climate, and Camels in Early Islamic Iran: A Moment in World History*. New York: Columbia University Press.|
 
