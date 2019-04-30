@@ -64,33 +64,52 @@ Each class session will consist in large part of practical hands-on exercises le
 
 # Schedule for the R Course
 
-Some topics are foundational and are taught in the TNT Class
+## Brief Schedule
 
-- ` Tu 05.03 [#01]` Introduction
-- ` Tu 19.03 [#02]` Data organization
-- ` Tu 26.03 [#03]` TEXTS: Simple techniques
-- ` Tu 02.04 [#04]` TEXTS: Moderate techniques
-- ` Tu 09.04 [#05]` TEXTS: Complex techniques 
-- ` Tu 30.04 [#06]` 
-- ` Tu 07.05 [#07]` 
-- ` Tu 14.05 [#08]` 
-- ` Tu 21.05 [#09]` 
-- ` Tu 28.05 [#10]` 
-- ` Tu 04.06 [#11]` 
-- ` Tu 18.06 [#12]` 
-- ` Tu 25.06 [#13]` Project presentations
+- `[#01]` Basics: Introduction --- *Making sure everything works*
+- `[#02]` Basics: Worksheets --- Getting Familiar with R, Data Structures and Subsetting (WS1 and WS2)
+- `[#03]` Basics: Data manipulation
+	- WS3 and WS4
+	- HW: EDA from swirl() 
+- `[#04]` Basics: Visualizing Data
+	- Basic Principles and Practice (WS5)
+	- HW: Functions WS6 can be given as homework
+- `[#05]` Basics: simple cartograms (mapping)
+	- workbook with Pleiades data
+	- HW: data from `europop` and *boskers* dataset
+- `[#06]` Data: preparing, collecting, organizing
+- `[#07]` Data: modeling
+- `[#08]` Texts: micro, meso, macro
+- `[#09]` Texts: topic modeling
+- `[#10]` Texts: stylometry
+- `[#11]` SNA: basics & practice
+- `[#12]` SNA: modeling & challenge
+- `[#13]` SNA and Maps: ?
+- `[#14]` Project Presentations
 
+* Units:
+	- basics
+	- data
+	- texts
+	- mapping data
+	- social network analysis
+
+## Notes:
+
+* Tilton's book has 100 programming exercises -> I am sure they can be worked into workbooks (for the next time > prep workbooks for each class);
+	- these are to serve as foundation for my Islamic World Analysis class/book.
+* Healy's book has lots of materials that can be worked into the my course materials.
 
 ## Detailed Schedule
 
-### ` Tu 05.03 [#01]` Introduction
+### `[#01]` Introduction --- *Making Sure Everything Works*
 
 - Installing `R`: <https://cloud.r-project.org/>
 - Installing `RStudio`: <https://www.rstudio.com/products/rstudio/download/>
 - Basic commands in `R`
 - Writing `R markdown` documents
 
-### ` Tu 12.03 [#02]` NO CLASS
+### `[#02]` NO CLASS
 
 - Homework (for 19.03):
 	- `swirl` tutorials
@@ -126,7 +145,11 @@ Some topics are foundational and are taught in the TNT Class
 
 ### ` Tu 25.06 [#13]` 
 
-# Topics to cover:
+
+
+# Working Notes
+
+## Topics to cover:
 
 1. R basics:
 	- Basic intro;
@@ -142,7 +165,27 @@ Some topics are foundational and are taught in the TNT Class
 - topic modeling
 - stylometry
 
-## Datasets
+## Practice Datasets
+
+- from Mullen:
+	- `historydata` package include a number of datasets suitable for practice
+- via Mullen:
+	- `europop` package:
+		- `europop` table with the historical population of European cities
+		- `city_coords` table with coordinates of those cities
+- via MGR:
+	- "digital" datasets:
+		- `bosker` dataset (available online with the publication)
+	- "paper" datasets:
+		- pages from Ian Morris
+	- text/corpus datasets:
+		- The Richmond Dispatch
+		- rStylo collection of texts for stylometric experiments
+		- Gutenberg texts (Jockers)
+		- Tilton and Arnold?
+	- network datasets:
+
+
 
 - Library of Congress:
 	- [**DATA**] 25 mln book records: <http://www.loc.gov/cds/products/MDSConnect-books_all.html>

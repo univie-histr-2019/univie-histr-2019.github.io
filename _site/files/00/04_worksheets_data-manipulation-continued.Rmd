@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+
+  <title>More data manipulation with dplyr and tidy</title>
+
+  <meta name="author" content="Students of the Class" />
+
+  
+
+  <link rel="alternate" type="application/rss+xml" title="070116 AR Methodological Workshop (2019S) - DH Methods — Historical Inquiries with R" href="/feed.xml" />
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+
+  
+  <meta property="og:title" content="More data manipulation with dplyr and tidy" />
+  
+
+   
+  <meta property="og:description" content="**NB:** The worksheet has beed developed and prepared by Lincoln Mullen. Source: Lincoln A. Mullen, *Computational Historical Thinking: With Applications in R (2018–)*: . The best way to learn R or computational history is to practice. These worksheets contain a series of questions designed to teach you about R or...">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="http://localhost:4000/files/00/04_worksheets_data-manipulation-continued.Rmd" />
+  <link rel="canonical" href="http://localhost:4000/files/00/04_worksheets_data-manipulation-continued.Rmd" />
+  
+
+  
+  <meta property="og:image" content="http://localhost:4000/img/avatar-icon.png" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="More data manipulation with dplyr and tidy" />
+  
+
+  
+  <meta name="twitter:description" content="**NB:** The worksheet has beed developed and prepared by Lincoln Mullen. Source: Lincoln A. Mullen, *Computational Historical Thinking: With Applications in R (2018–)*: . The best way to learn R or computational history is to practice. These worksheets contain a series of questions designed to teach you about R or...">
+  
+
+  
+  <meta name="twitter:image" content="http://localhost:4000/img/avatar-icon.png" />
+  
+
+  
+
+  
+
+</head>
+
+
+  <body>
+
+    
+
+  
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand" href="http://localhost:4000">070116 AR Methodological Workshop (2019S)</a>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/about">Syllabus</a>
+
+          </li>
+        
+        
+        
+          <li class="navlinks-container">
+            <a class="navlinks-parent" href="javascript:void(0)">Lessons</a>
+            <div class="navlinks-children">
+              
+                
+                  
+
+
+
+
+
+
+<a href="/01">I.01. General Introduction</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/02">I.02. Basics of R</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/03">I.03. Data - Collecting, Creating, Organinzing</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/04">I.04. Data - Modeling</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/05">I.05. Data - Manipulating</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/06">II.06. Data Viz - Basics</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/07">II.07. Data Viz - `Cartogramming`</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/08">08. ...</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/09">09. ...</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/10">10. ...</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/11">11. ...</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/12">12. ...</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/13">13. ...</a>
+
+                
+              
+            </div>
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/resources">Resources</a>
+
+          </li>
+        
+        
+      </ul>
+    </div>
+
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="http://localhost:4000">
+	      <img class="avatar-img" src="/img/avatar-icon.png" />
+		</a>
+	  </div>
+	</div>
+	
+
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-heading">
+          <h1>More data manipulation with dplyr and tidy</h1>
+		  
+		  
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      **NB:** The worksheet has beed developed and prepared by Lincoln Mullen. Source: Lincoln A. Mullen, *Computational Historical Thinking: With Applications in R (2018–)*: <http://dh-r.lincolnmullen.com>.
+
+The best way to learn R or computational history is to practice. These worksheets contain a series of questions designed to teach you about R or different computational methods. The worksheets are R Markdown documents that include text and code together. The places where you are expected to answer questions are marked like this.
+
+```
+(@) Can you make a plot from this dataset?
+```
+
+Beneath each question is a space to either create a code block or write an answer.
+
+## Aims of this worksheet
+
+In an earlier worksheet, you learned the basic data manipulation verbs from the dplyr package: `select()`, `filter()`, `mutate()`, `arrange()`, `group_by()`, and `summarize()`. In this worksheet you will learn additional data verbs from the dplyr and tidyr packages. These data verbs relate to window functions (`lead()` and `lag()`), data table joins (`left_join()` et al.), and data reshaping (`spread()` and `gather()`)
+
+To begin, we will load the necessary packages, as well as the Methodist data.
+
+```{r, message=FALSE}
+library(tidyverse)
+library(historydata)
+data("methodists")
+methodists
+```
+
+## Data joining with two table verbs (`left_join()` et al.)
+
+It is often the case that we want to use some variable in our data to create a new variable. Consider the Methodist data for the year 1800. Perhaps we are interested in the racial composition of the churches. Do they tend to be all white and all black, or do some churches have both white and black members in varying proportions? The simplest way to get a look at that question is to create a scatter plot of the figures for white and black membership.
+
+```{r, warning=FALSE}
+methodists_1800 <- methodists %>% 
+  filter(year == 1800) %>% 
+  select(meeting, state, members_white, members_black)
+
+ggplot(methodists_1800, aes(x = members_white, y = members_black)) +
+  geom_point(shape = 1) 
+```
+
+That scatterplot is interesting as far as it goes, but we might reasonably suspect that the racial composition of methodist meetings varies by region. We could use the `state` variable to facet the plot by state. However, this has two problems. There are 20 states represented in that year. Our faceted plot would have 20 panels, which is too many. But more important, by looking at individual states we might be getting *too* fine grained a look at the data. We have good reason to think that it is regions that matter more than states. 
+
+It is easy enough to describe what we would do to translate states into a new column with regions. We would look at each state name and assign it to a region. Connecticut would be in the Northeast, New York would be in the Mid-Atlantic, and so on. We can think of this problem as looking up a value in one table (our Methodist data) in another table. That other table will have a row for each state, where each state name is associated with a region. (In many cases, though, it would make more sense to create a CSV file with the data and read it in as a data frame.)
+
+```{r}
+regions <- data_frame(
+  state = c("Connecticut", "Delaware", "Georgia", "Kentucky", "Maine", 
+             "Maryland", "Massachusetts", "Mississippi", "New Hampshire", 
+             "New Jersey", "New York", "North Carolina",
+             "Northwestern Territory", "Pennsylvania", "Rhode Island",
+             "South Carolina", "Tennessee", "Upper Canada", "Vermont",
+             "Virginia"),
+  region = c("Northeast", "Atlantic South", "Atlantic South", "West",
+             "Northeast", "Atlantic South", "Northeast", "Deep South", 
+             "Northeast", "Mid-Atlantic", "Mid-Atlantic", "Atlantic South",
+             "West", "Mid-Atlantic", "Northeast", "Atlantic South", "West",
+             "Canada", "Northeast", "Atlantic South")
+)
+```
+
+And now we can inspect the table.
+
+```{r}
+regions
+```
+
+We can do a look up where we take the `state` column in the `methodists_1800` data frame and associate it with the `states` column in our `regions` data frame. The result will be a new column `region`. Notice how we use the `by =` argument to specify which column in the left hand table matches which column in the right hand table.
+
+```{r}
+methodists_region <- methodists_1800 %>% 
+  left_join(regions, by = "state")
+
+methodists_region
+```
+
+Then we can plot the results. As we suspected, there is a huge regional variation.
+
+```{r, warning=FALSE}
+ggplot(methodists_region, aes(x = members_white, y = members_black)) +
+  geom_point(shape = 1) +
+  facet_wrap(~ region)
+```
+
+(@) Can you summarize the racial composition of the different regions by year (i.e., a region had a certain percentage white and black members for a given year) and create a plot of the changing racial composition in each region over time?
+
+```{r}
+
+```
+
+(@) In the europop package there are two data frames, `europop` with the historical populations of European cities, and `city_coords` which has the latitudes and longitudes of those cities. Load that package and join the two tables together. Can you get the populations of cities north of 48° of latitude?
+
+```{r}
+
+```
+
+(@) In the historydata package there are two tables, `judges_people` and `judges_appointments`. Join them together. What are the names of black judges who were appointed to the Supreme Court?
+
+```{r}
+
+```
+
+(@) What courts did those justices serve on before the Supreme Court?
+
+```{r}
+
+```
+
+## Data reshaping (`spread()` and `gather()`)
+
+It can be helpful to think of tabular data as coming in two forms: wide data, and long data. Let's load in a table of data. This data contains total membership figures for the Virginia conference of the Methodist Episcopal Church for the years 1812 to 1830.
+
+```{r, message=FALSE}
+va_wide <- read_csv("http://dh-r.lincolnmullen.com/data/va-methodists-wide.csv")
+va_wide
+```
+
+The first thing we can notice about this data frame is that it is very wide because it has a column for each of the years. The data is also suitable for reading because it like a table in a publication. We can read from left to right and see when certain districts begin and end and get the values for each year. The difficulties of computing on or plotting the data will also become quickly apparent. How would you make a plot of the change over time in the number of members in each district? Or how would you filter by year, or summarize by year? For that matter, what do the numbers in the table represent, since they are not given an explicit variable name?
+
+The problem with the table is that it is not *tidy data*, because the variables are not in columns and observations in rows. One of the variables is the year, but its values are in the column headers. And another of the variables is total membership, but its values are spread across rows and columns and it is not explicitly named. 
+
+The `gather()` function from the [tidyr](https://cran.rstudio.com/web/packages/tidyr/) package lets us turn wide data into long data. We need to tell the function two kinds of information. First we need to tell it the name of the column to create from the column headers and the name of the implicit variable in the rows. In the example below, we create to new columns `minutes_year` and `total_membership`. Then we also have to tell the function if there are any columns which should remain unchanged. In this case, the `conference` and `district` variables should remain the same, so we remove them from the gathering using the same syntax as the `select()` function.
+
+```{r}
+va_wide %>% 
+  gather(year, members_total, -conference, -district)
+```
+
+We can see the results above. There are two ways that this result is not quite what we want. Because the years were column headers they are treated as character vectors rather than integers. We can manually convert them in a later step, but we can also let `gather()` do the right thing with the `convert =` argument. Then we have a lot of `NA` values which were explicit in the wide table but which can be removed from the long table with `na.rm =`.
+
+```{r}
+va_long <- va_wide %>% 
+  gather(year, members_total, -conference, -district, 
+         convert = TRUE, na.rm = TRUE)
+
+va_long
+```
+
+Notice that now we can use the data in ggplot2 without any problem.
+
+```{r}
+ggplot(va_long, 
+       aes(x = year, y = members_total, color = district)) +
+  geom_line() +
+  ggtitle("Membership of districts in the Virginia conference")
+```
+
+The inverse operation of `gather()` is `spread()`. With `spread()` we specify the name of the column which should become the new column headers (in this case `minutes_year`), and then the name of the column to fill in underneath those new column headers (in this case, `total_membership`). We can see the results below.
+
+```{r}
+va_wide2 <- va_long %>% 
+  spread(year, members_total)
+
+va_wide2
+```
+
+By looking at the data we can see that we got back to where we started.
+
+Turning long data into wide is often useful when you want to create a tabular representation of data. (And once you have a data frame that can be a table, the `knitr::kable()` function is quite nice.) And some algorithms, such as clustering algorithms, expect wide data rather than tidy data.
+
+For the exercise, we will use summary statistics of the number of white and black members in the Methodists by year.
+
+```{r}
+methodists_by_year_race <- methodists %>% 
+  group_by(year) %>% 
+  summarize(white = sum(members_white, na.rm = TRUE),
+            black = sum(members_black, na.rm = TRUE),
+            indian = sum(members_indian, na.rm = TRUE))
+methodists_by_year_race
+```
+
+(@) The data in `methodists_by_year_race` could be tidier still. While `white`, `black`, and `indian` are variables, it is perhaps better to think of them as two different variables. One variable would be `race`, containing the racial descriptions that the Methodists used, and another would be `members`, containing the number of members. Using the `gather()` function, create that data frame.
+
+```{r}
+
+```
+
+(@) Use the data frame you created in the previous step to create a line plot of membership over time, mapping the `race` column to the `color` aesthetic.
+
+```{r}
+
+```
+
+(@) Now use that newly tidied data frame to create a wide data frame, where the years are the column headers and the racial descriptions are the rows.
+
+```{r}
+
+```
+
+(@) Now use the same tidied data to create a wide data frame where the racial descriptions are column headers and the years are rows.
+
+```{r}
+
+```
+
+
+	    
+        <div class="disqus-comments">
+	        <div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'univie-histr-2019';
+        /* ensure that pages with query string get the same discussion */
+            var url_parts = window.location.href.split("?");
+            var disqus_url = url_parts[0];
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <script id="dsq-count-scr" src="//univie-tnt-2019.disqus.com/count.js" async></script>
+</div>
+        </div>
+	        
+        <div class="staticman-comments">
+          
+
+        </div>
+	    
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links"><li><a href="/feed.xml" title="RSS"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">RSS</span>
+              </a>
+            </li><li><a href="mailto:maxim.romanov@univie.ac.at" title="Email me"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Email me</span>
+              </a>
+            </li></ul>
+      <p class="copyright text-muted">
+      Students of the Class
+      &nbsp;&bull;&nbsp;
+      2019
+
+      
+      &nbsp;&bull;&nbsp;
+      <a href="http://localhost:4000">univie-histr-2019.github.io</a>
+      
+
+      
+      </p>
+          <!-- Please don't remove this, keep my open source work credited :) -->
+    <p class="theme-by text-muted">
+      Theme by
+      <a href="https://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+
+
+  
+  </body>
+</html>

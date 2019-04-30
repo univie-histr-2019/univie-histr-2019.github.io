@@ -7,6 +7,45 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>L06 Data Visualizations</title>
+        <description>
+          Basics Principles - 
+          Follow the link…
+
+
+        </description>
+        <pubDate>Tue, 30 Apr 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2019-04-30-L06-viz-basics/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-04-30-L06-viz-basics/</guid>
+      </item>
+    
+      <item>
+        <title>Lesson 5</title>
+        <description>
+          Data (3) - 
+          Follow the link…
+
+
+        </description>
+        <pubDate>Mon, 08 Apr 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2019-04-08-L05-data-3/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-04-08-L05-data-3/</guid>
+      </item>
+    
+      <item>
+        <title>Lesson 4</title>
+        <description>
+          Data (2) - 
+          Follow the link…
+
+
+        </description>
+        <pubDate>Mon, 01 Apr 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2019-04-01-L04-data-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-04-01-L04-data-2/</guid>
+      </item>
+    
+      <item>
         <title>Lesson 3</title>
         <description>
           Data (1) - 
