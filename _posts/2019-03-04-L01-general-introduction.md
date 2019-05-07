@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Lesson 1
-subtitle: General Introduction
+title: L01 - General Introduction
+subtitle: Making Sure Everything Works
 tags: intro
 comments: true
 ---
