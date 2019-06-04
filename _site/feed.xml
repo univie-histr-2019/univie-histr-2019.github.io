@@ -7,7 +7,72 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>L06 Data Visualizations</title>
+        <title>L11 - Text Analysis (1/3)</title>
+        <description>
+          
+          Follow the link…
+
+
+        </description>
+        <pubDate>Mon, 03 Jun 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2019-06-03-L11-ta2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-06-03-L11-ta2/</guid>
+      </item>
+    
+      <item>
+        <title>L10 — Social Network Analysis 02</title>
+        <description>
+          Basics, Building iGraph Objects, Plotting, Cluster Analysis, SNA Data Reuse - 
+          Follow the link…
+
+
+        </description>
+        <pubDate>Mon, 27 May 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2019-05-27-L10-sna2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-05-27-L10-sna2/</guid>
+      </item>
+    
+      <item>
+        <title>L09 — Social Network Analysis 01</title>
+        <description>
+          Basics, Building iGraph Objects, Plotting - 
+          Follow the link…
+
+
+        </description>
+        <pubDate>Mon, 20 May 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2019-05-20-L09-sna1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-05-20-L09-sna1/</guid>
+      </item>
+    
+      <item>
+        <title>L08 — Visualizing Geographical Data</title>
+        <description>
+          Building Robust Maps - 
+          Follow the link…
+
+
+        </description>
+        <pubDate>Mon, 13 May 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2019-05-13-L08-geoData2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-05-13-L08-geoData2/</guid>
+      </item>
+    
+      <item>
+        <title>L07 — Visiualizing Geographical Data</title>
+        <description>
+          Extending `ggplot` into mapping tasks - 
+          Follow the link…
+
+
+        </description>
+        <pubDate>Mon, 06 May 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2019-05-06-L07-geoData1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-05-06-L07-geoData1/</guid>
+      </item>
+    
+      <item>
+        <title>L06 — Data Visualizations</title>
         <description>
           Basics Principles - 
           Follow the link…
@@ -20,9 +85,9 @@
       </item>
     
       <item>
-        <title>Lesson 5</title>
+        <title>L05 — Data III</title>
         <description>
-          Data (3) - 
+          Manipulating, Exploratory Analysis - 
           Follow the link…
 
 
@@ -33,9 +98,9 @@
       </item>
     
       <item>
-        <title>Lesson 4</title>
+        <title>L04 — Data II</title>
         <description>
-          Data (2) - 
+          Modeling &amp; Manipulating - 
           Follow the link…
 
 
@@ -46,9 +111,9 @@
       </item>
     
       <item>
-        <title>Lesson 3</title>
+        <title>L03 — Data I</title>
         <description>
-          Data (1) - 
+          Collecting, Organizing, Creating - 
           Follow the link…
 
 
@@ -59,9 +124,9 @@
       </item>
     
       <item>
-        <title>Lesson 2</title>
+        <title>L02 - Basics of R</title>
         <description>
-          Basics of R - 
+          
           Follow the link…
 
 
@@ -72,9 +137,9 @@
       </item>
     
       <item>
-        <title>Lesson 1</title>
+        <title>L01 - General Introduction</title>
         <description>
-          General Introduction - 
+          Making Sure Everything Works - 
           Follow the link…
 
 
@@ -85,7 +150,7 @@
       </item>
     
       <item>
-        <title>Syllabus</title>
+        <title>00 — Syllabus</title>
         <description>
           Description of the Course - 
           Follow the link…

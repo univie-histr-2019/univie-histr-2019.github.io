@@ -30,12 +30,12 @@ Each class session will consist in large part of practical hands-on exercises le
 
 # Homework
 
-* For each class you will be creating reports, which can be then submitted as PDFs (email or Moodle), or published as your own Shiny web application.
+* For each class you will be creating reports, which can be then submitted as PDFs (email or Moodle).
 * DH is a collaborative field, so you are most welcome to work on your homework assignments in groups, however, you must still submit them individually. That is, if a groups of three works on one assignment, there must be three separate submissions by each member of the group. 
 
 # Final Project
 
-* The final project is a portfolio of detailed reports for each class. You are highly encouraged to use your own dataset for the final project and your weekly assignments.
+* The final project should be an analysis of your own dataset with the methods and techniques covered iduring the course, although you are, of course, encouraged to apply methods described in provided reading materials as well.
 
 # Study Materials
 
@@ -68,20 +68,20 @@ Each class session will consist in large part of practical hands-on exercises le
 The syllabus is approximate and may be adjusted. The following is more of a roadmap.
 
 - ` Tu 05.03 [#01]` 	Introduction
-- ` Tu 19.03 [#02]` 	Data organization
+- ` Tu 19.03 [#02]` 	Basics of R
 - ` Tu 26.03 [#03]` 	Data Manipulations I
 - ` Tu 02.04 [#04]` 	Data Manipulations II
-- ` Tu 09.04 [#05]` 	Graphing data I
-- ` Tu 30.04 [#06]` 	Graphing data II
-- ` Tu 07.05 [#07]` 	Social Network Analysis I
-- ` Tu 14.05 [#08]` 	Social Network Analysis II
-- ` Tu 21.05 [#09]` 	Mapping Data I
-- ` Tu 28.05 [#10]` 	Mapping Data II
-- ` Tu 04.06 [#11]` 	Working with texts I
-- ` Tu 18.06 [#12]` 	Working with texts II 
-- ` Tu 25.06 [#13]` 	Project presentations
+- ` Tu 09.04 [#05]` 	Data Manipulations III
+- ` Tu 30.04 [#06]` 	Data Visualizations
+- ` Tu 07.05 [#07]` 	Visualizing Geospatial Data I
+- ` Tu 14.05 [#08]` 	Visualizing Geospatial Data II
+- ` Tu 21.05 [#09]` 	Social Network Analysis I
+- ` Tu 28.05 [#10]` 	Social Network Analysis II
+- ` Tu 04.06 [#11]` 	Text Analysis I
+- ` Tu 18.06 [#12]` 	Text Analysis II 
+- ` Tu 25.06 [#13]` 	Text Analysis III
 
-**NB:** Some topics are foundational and will not be discussed in this class; if you are unfamiliar with those, you are encouraged to attend a relevamt class in the *Tools & Techniques* Course (<https://univie-tnt-2019.github.io/>)
+**NB:** Some topics are foundational and will not be discussed in this class; if you are unfamiliar with those, you are encouraged to attend a relevant class in the *Tools & Techniques* Course (<https://univie-tnt-2019.github.io/>)
 
 ## Datasets
 
@@ -90,6 +90,6 @@ The syllabus is approximate and may be adjusted. The following is more of a road
 - Miriam Posner (UCLA):
 	- [**DATA**] collection of datasets: <http://miriamposner.com/classes/dh201w19/final-project/datasets/>
 	- class materials: <http://miriamposner.com/classes/dh201w19/>
-- Lincoln Mullen (Geprge Mason U):
+- Lincoln Mullen (George Mason U):
 	- [**DATA**] `historydata` R-package: <https://lincolnmullen.com/software/historydata/>
 	- *Computational Historical Thinking*, <https://dh-r.lincolnmullen.com/>

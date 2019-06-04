@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
 
-  <title>L09</title>
+  <title>L09 — Social Network Analysis 01</title>
 
   <meta name="author" content="Students of the Class" />
 
   
-  <meta name="description" content="title">
+  <meta name="description" content="Basics, Building iGraph Objects, Plotting">
   
 
   <link rel="alternate" type="application/rss+xml" title="070116 AR Methodological Workshop (2019S) - DH Methods — Historical Inquiries with R" href="/feed.xml" />
@@ -60,11 +60,11 @@
   
 
   
-  <meta property="og:title" content="L09" />
+  <meta property="og:title" content="L09 — Social Network Analysis 01" />
   
 
    
-  <meta property="og:description" content="title">
+  <meta property="og:description" content="Basics, Building iGraph Objects, Plotting">
   
 
 
@@ -86,11 +86,11 @@
   <meta name="twitter:creator" content="@" />
 
   
-  <meta name="twitter:title" content="L09" />
+  <meta name="twitter:title" content="L09 — Social Network Analysis 01" />
   
 
   
-  <meta name="twitter:description" content="title">
+  <meta name="twitter:description" content="Basics, Building iGraph Objects, Plotting">
   
 
   
@@ -153,7 +153,7 @@
 
 
 
-<a href="/01">I.01. General Introduction</a>
+<a href="/01">01. General Introduction</a>
 
                 
               
@@ -165,7 +165,7 @@
 
 
 
-<a href="/02">I.02. Basics of R</a>
+<a href="/02">02. Basics of R</a>
 
                 
               
@@ -177,7 +177,7 @@
 
 
 
-<a href="/03">I.03. Data - Collecting, Creating, Organinzing</a>
+<a href="/03">03. Data - Collecting, Creating, Organinzing</a>
 
                 
               
@@ -189,7 +189,7 @@
 
 
 
-<a href="/04">I.04. Data - Modeling</a>
+<a href="/04">04. Data - Modeling</a>
 
                 
               
@@ -201,7 +201,7 @@
 
 
 
-<a href="/05">I.05. Data - Manipulating</a>
+<a href="/05">05. Data - Manipulating</a>
 
                 
               
@@ -213,7 +213,7 @@
 
 
 
-<a href="/06">II.06. Data Viz - Basics</a>
+<a href="/06">06. Data Viz - Basics</a>
 
                 
               
@@ -225,7 +225,7 @@
 
 
 
-<a href="/07">II.07. Data Viz - `Cartogramming`</a>
+<a href="/07">07. Data Viz - `Cartogramming`</a>
 
                 
               
@@ -237,7 +237,7 @@
 
 
 
-<a href="/08">08. ...</a>
+<a href="/08">08. Data Viz - Robust Maps</a>
 
                 
               
@@ -249,7 +249,7 @@
 
 
 
-<a href="/09">09. ...</a>
+<a href="/09">09. SNA 1/2</a>
 
                 
               
@@ -261,7 +261,7 @@
 
 
 
-<a href="/10">10. ...</a>
+<a href="/10">10. SNA 2/2</a>
 
                 
               
@@ -273,7 +273,7 @@
 
 
 
-<a href="/11">11. ...</a>
+<a href="/11">11. Text Analysis 1/3</a>
 
                 
               
@@ -285,7 +285,7 @@
 
 
 
-<a href="/12">12. ...</a>
+<a href="/12">12. Text Analysis 1/3</a>
 
                 
               
@@ -297,7 +297,7 @@
 
 
 
-<a href="/13">13. ...</a>
+<a href="/13">13. Text Analysis 1/3</a>
 
                 
               
@@ -349,11 +349,11 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-heading">
-          <h1>L09</h1>
+          <h1>L09 — Social Network Analysis 01</h1>
 		  
 		    
             <hr class="small">
-            <span class="page-subheading">title</span>
+            <span class="page-subheading">Basics, Building iGraph Objects, Plotting</span>
 			
 		  
 		  
@@ -374,19 +374,84 @@
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <h1 id="goals">Goals</h1>
 
-<p>…</p>
+<ul>
+  <li>Social Network Analysis</li>
+  <li>Basic components</li>
+  <li><code class="highlighter-rouge">igraph</code> library: building and modifying <code class="highlighter-rouge">igraph</code> objects</li>
+  <li>plotting graphs</li>
+</ul>
 
 <h1 id="software--other-required-materials">Software &amp; Other Required Materials</h1>
 
-<p>…</p>
+<ul>
+  <li>SNA Basics Worksheet: <a href="https://univie-histr-2019.github.io/files/09/09_Woksheet_SNA01.Rmd.zip">09_Woksheet_SNA01.Rmd.zip</a></li>
+  <li>SNA Sample DATA: <a href="https://univie-histr-2019.github.io/files/09/sw_network_data.zip">sw_network_data.zip</a></li>
+</ul>
+
+<h1 id="sna-concepts">SNA Concepts</h1>
+
+<ul>
+  <li><strong>Networks</strong>
+    <ul>
+      <li>Patterns of relationships that connect individuals, institutions, or objects (or leave them unconnected)</li>
+      <li><em>Examples</em>: family ties—vertical and horizontal; patronage—who pays whom for what services; shared membership in organizations; paterns of contracts among companies.</li>
+    </ul>
+  </li>
+  <li><strong>Main elements</strong>
+    <ul>
+      <li>Node (vertex, point, item)—person, organization, country, document, etc.</li>
+      <li>Edge (tie, link, line)—relationship, friendship, common attendance, co-occurance, kinship, membership
+        <ul>
+          <li>Directed and Undirected links: marriage—undirected; patronage—directed.</li>
+        </ul>
+      </li>
+      <li>Graphs (Sociograms) / Matrices (pl. of matrix)</li>
+    </ul>
+  </li>
+  <li><strong>Graph properties</strong>
+    <ul>
+      <li><strong>Density</strong>: number of edges / number of edges in a complete graph (example of complete and incomplete graph)</li>
+      <li><strong>Centrality measures</strong>
+        <ul>
+          <li><em>Degree</em>: Proportional to the number of other nodes to which a node is links – Number of links divided by (n-1). For example: it may measure exposure to what is flowing through the network (opportunity to influence directly; in-degree and out-degree).</li>
+          <li><em>Closeness</em> – The sum of shortest paths to all other points in the graph. Divide by (n-1), then invert. For example: it may measure how quickly information can travel.</li>
+          <li><em>Betweenness</em> – The extent to which a particular point lies ‘between’ other points in the graph; how many shortest paths (geodesics) is it on? A measure of brokerage or gatekeeping (How often a node lies on the shortest path between two other nodes)</li>
+          <li><em>Eigenvector</em> – A weighted measure of centrality that takes into account the centrality of other nodes to which a node is connected.  That is, being connect with other central nodes increases centrality.  E.g., secretary of powerful person.  Google’s page rank algorithm is based on a variation of this approach.</li>
+        </ul>
+      </li>
+      <li><strong>Modularity</strong>—interconnected clusters.</li>
+    </ul>
+  </li>
+</ul>
 
 <h1 id="in-class">In Class</h1>
 
-<p>…</p>
+<ul>
+  <li>working through the worksheet.</li>
+</ul>
 
 <h1 id="homework">Homework</h1>
 
-<p>…</p>
+<ul>
+  <li>Finish with the worksheet; email generated notebook.</li>
+</ul>
+
+<h1 id="references">References</h1>
+
+<ul>
+  <li>Jesse Sadler. 2017. <em>Introduction to Network Analysis with R: Creating static and interactive network graphs</em>, <a href="https://www.jessesadler.com/post/network-analysis-with-r/">https://www.jessesadler.com/post/network-analysis-with-r/</a>.</li>
+  <li>Katherine Ognyanova (2017-2018). <em>Static and dynamic network visualization with R</em>. <a href="https://kateto.net/network-visualization">https://kateto.net/network-visualization</a>.</li>
+  <li><em>Chapter 6</em> in: Arnold, Taylor, and Lauren Tilton. 2015. <em>Humanities Data in R</em>. New York, NY: Springer Science+Business Media.</li>
+</ul>
+
+<h1 id="references-data">References Data</h1>
+
+<ul>
+  <li>Evelina Gabasova. 2015. <em>The Start Wars Social Network.</em> <a href="http://evelinag.com/blog/2015/12-15-star-wars-social-network/index.html">http://evelinag.com/blog/2015/12-15-star-wars-social-network/index.html</a>.</li>
+  <li>Evelina Gabasova. 2016. <em>Star Wars social network (Version 1.0.1) [Data set]</em>. Zenodo. <a href="http://doi.org/10.5281/zenodo.1411479">http://doi.org/10.5281/zenodo.1411479</a>.</li>
+  <li>Star Wars: <a href="https://en.wikipedia.org/wiki/List_of_Star_Wars_characters">https://en.wikipedia.org/wiki/List_of_Star_Wars_characters</a>.</li>
+</ul>
+
 
 	    
         <div class="disqus-comments">
